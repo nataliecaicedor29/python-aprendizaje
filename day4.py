@@ -10,7 +10,7 @@ for i in range(1, 6):
 
 #Menu 
 while True:
-    opcion = input("1. Saludar 2. Salir")
+    opcion = input(" 1. Saludar 2. Salir")
     if opcion == "1":
         print("Hello!")
     elif opcion == "2":
