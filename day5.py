@@ -31,10 +31,14 @@ def show_gretting(name, city, age, classification):
      print (f"Hello {name}! You are {age} years old, from {city} and you are {classification}")
      
 #Principal program
-name, city, year = get_data()
-age = calculate_age(year)
-classification = classify_age(age)
-show_gretting(name, city, age, classification)
+answer = "yes"
+while answer == "yes":
+    name, city, year = get_data()
+    age = calculate_age(year)
+    classification = classify_age(age)
+    show_gretting(name, city, age, classification)
+    
+    answer = input("Do you want to analize another person? (yes/no) ")
     
     
         
